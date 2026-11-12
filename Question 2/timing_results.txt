@@ -1,0 +1,56 @@
+source checksum:
+02a17588517b1ca35520c2f06ede504e9b9afad8fc8911904da789ec2bd13297  big.bin
+
+== timing runs (seconds), 3 runs each
+copy_sys buffer 512
+  run 1: 1.175570
+  cmp: identical
+  run 2: 0.948706
+  cmp: identical
+  run 3: 0.754657
+  cmp: identical
+  average: 0.959647
+copy_sys buffer 4096
+  run 1: 0.169578
+  cmp: identical
+  run 2: 0.198366
+  cmp: identical
+  run 3: 0.258587
+  cmp: identical
+  average: 0.208844
+copy_sys buffer 65536
+  run 1: 0.076731
+  cmp: identical
+  run 2: 0.066391
+  cmp: identical
+  run 3: 0.064069
+  cmp: identical
+  average: 0.069064
+copy_stdio buffer 512
+  run 1: 0.172454
+  cmp: identical
+  run 2: 0.232957
+  cmp: identical
+  run 3: 0.175494
+  cmp: identical
+  average: 0.193635
+copy_stdio buffer 4096
+  run 1: 0.169936
+  cmp: identical
+  run 2: 0.158969
+  cmp: identical
+  run 3: 0.187013
+  cmp: identical
+  average: 0.171973
+copy_stdio buffer 65536
+  run 1: 0.073023
+  cmp: identical
+  run 2: 0.112626
+  cmp: identical
+  run 3: 0.074270
+  cmp: identical
+  average: 0.086640
+
+== error handling
+open source: No such file or directory
+fopen source: No such file or directory
