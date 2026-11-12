@@ -1,0 +1,49 @@
+gcc -Wall -Wextra -pthread -o perfect perfect.c
+
+== run 1
+Perfect numbers found: 6 28 496 8128
+The synchronized total number of perfect numbers between 1 and 100000 is 4
+Single-threaded time: 0.189901 seconds (found 4)
+Multi-threaded time:  0.079925 seconds
+
+Time for each thread:
+Thread 1 (1 to 12500): 0.006632 seconds
+Thread 2 (12501 to 25000): 0.025680 seconds
+Thread 3 (25001 to 37500): 0.031572 seconds
+Thread 4 (37501 to 50000): 0.052934 seconds
+Thread 5 (50001 to 62500): 0.070963 seconds
+Thread 6 (62501 to 75000): 0.043789 seconds
+Thread 7 (75001 to 87500): 0.071973 seconds
+Thread 8 (87501 to 100000): 0.065286 seconds
+
+== run 2
+Perfect numbers found: 6 28 496 8128
+The synchronized total number of perfect numbers between 1 and 100000 is 4
+Single-threaded time: 0.164554 seconds (found 4)
+Multi-threaded time:  0.089394 seconds
+
+Time for each thread:
+Thread 1 (1 to 12500): 0.019496 seconds
+Thread 2 (12501 to 25000): 0.081338 seconds
+Thread 3 (25001 to 37500): 0.027940 seconds
+Thread 4 (37501 to 50000): 0.062760 seconds
+Thread 5 (50001 to 62500): 0.058565 seconds
+Thread 6 (62501 to 75000): 0.040575 seconds
+Thread 7 (75001 to 87500): 0.072104 seconds
+Thread 8 (87501 to 100000): 0.083935 seconds
+
+== run 3
+Perfect numbers found: 6 28 496 8128
+The synchronized total number of perfect numbers between 1 and 100000 is 4
+Single-threaded time: 0.179595 seconds (found 4)
+Multi-threaded time:  0.089981 seconds
+
+Time for each thread:
+Thread 1 (1 to 12500): 0.006151 seconds
+Thread 2 (12501 to 25000): 0.020317 seconds
+Thread 3 (25001 to 37500): 0.023381 seconds
+Thread 4 (37501 to 50000): 0.064756 seconds
+Thread 5 (50001 to 62500): 0.029268 seconds
+Thread 6 (62501 to 75000): 0.040751 seconds
+Thread 7 (75001 to 87500): 0.074856 seconds
+Thread 8 (87501 to 100000): 0.068788 seconds
