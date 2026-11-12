@@ -1,0 +1,14 @@
+== normal run
+Child 1 (cat) exited with status 0
+Child 2 (cut) exited with status 0
+Child 3 (sort) exited with status 0
+
+First 5 lines of result.txt:
+/bin/bash
+/bin/false
+/bin/sync
+/usr/sbin/nologin
+
+Total lines: 4
+== check with the real shell pipeline
+4

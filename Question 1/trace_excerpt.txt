@@ -1,0 +1,41 @@
+﻿792   22:44:32.026574 execve("./pipeline", ["./pipeline"], 0x7ffff82d7a90 /* 22 vars */) = 0
+792   22:44:32.095690 pipe2([3, 4], 0)  = 0
+792   22:44:32.098402 pipe2([5, 6], 0)  = 0
+792   22:44:32.101688 pipe2([8, 9], 0)  = 0
+792   22:44:32.103537 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x75cec384ba10) = 793
+792   22:44:32.105990 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+793   22:44:32.109608 dup2(4, 1 <unfinished ...>
+792   22:44:32.110446 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+794   22:44:32.115760 dup2(3, 0 <unfinished ...>
+795   22:44:32.119663 dup2(5, 0 <unfinished ...>
+795   22:44:32.124012 dup2(9, 1 <unfinished ...>
+794   22:44:32.124760 dup2(6, 1 <unfinished ...>
+792   22:44:32.142648 openat(AT_FDCWD, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+795   22:44:32.162725 execve("/usr/local/sbin/sort", ["sort", "-u"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+795   22:44:32.166606 execve("/usr/local/bin/sort", ["sort", "-u"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+795   22:44:32.171608 execve("/usr/sbin/sort", ["sort", "-u"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+793   22:44:32.173986 execve("/usr/local/sbin/cat", ["cat", "/etc/passwd"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+795   22:44:32.174893 execve("/usr/bin/sort", ["sort", "-u"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+793   22:44:32.180669 execve("/usr/local/bin/cat", ["cat", "/etc/passwd"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+794   22:44:32.185811 execve("/usr/local/sbin/cut", ["cut", "-d:", "-f7"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+793   22:44:32.187273 execve("/usr/sbin/cat", ["cat", "/etc/passwd"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+794   22:44:32.193237 execve("/usr/local/bin/cut", ["cut", "-d:", "-f7"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+793   22:44:32.194703 execve("/usr/bin/cat", ["cat", "/etc/passwd"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+794   22:44:32.198047 execve("/usr/sbin/cut", ["cut", "-d:", "-f7"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+794   22:44:32.201639 execve("/usr/bin/cut", ["cut", "-d:", "-f7"], 0x7ffc7b824118 /* 22 vars */ <unfinished ...>
+793   22:44:32.960318 write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1480 <unfinished ...>
+793   22:44:32.978777 exit_group(0 <unfinished ...>
+794   22:44:32.981228 write(1, "/bin/bash\n/usr/sbin/nologin\n/usr"..., 484 <unfinished ...>
+793   22:44:32.982017 +++ exited with 0 +++
+795   22:44:32.993457 write(1, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 49 <unfinished ...>
+794   22:44:32.994186 exit_group(0 <unfinished ...>
+792   22:44:32.996174 write(3, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 49 <unfinished ...>
+794   22:44:33.000373 +++ exited with 0 +++
+795   22:44:33.020354 exit_group(0 <unfinished ...>
+792   22:44:33.023780 wait4(793,  <unfinished ...>
+795   22:44:33.024547 +++ exited with 0 +++
+792   22:44:33.037293 wait4(794, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 794
+792   22:44:33.038792 wait4(795, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 795
+792   22:44:33.040181 openat(AT_FDCWD, "result.txt", O_RDONLY) = 3
+792   22:44:33.050187 exit_group(0)     = ?
+792   22:44:33.052237 +++ exited with 0 +++
