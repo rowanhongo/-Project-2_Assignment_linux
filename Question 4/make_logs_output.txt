@@ -1,0 +1,13 @@
+total 214064
+-rw-r--r-- 1 rowan rowan  1048594 Nov 12 22:58 server01.log
+-rw-r--r-- 1 rowan rowan  2097196 Nov 12 22:58 server02.log
+-rw-r--r-- 1 rowan rowan  3145739 Nov 12 22:59 server03.log
+-rw-r--r-- 1 rowan rowan  5242909 Nov 12 22:59 server04.log
+-rw-r--r-- 1 rowan rowan  8388623 Nov 12 22:59 server05.log
+-rw-r--r-- 1 rowan rowan 10485802 Nov 12 22:59 server06.log
+-rw-r--r-- 1 rowan rowan 15728676 Nov 12 22:59 server07.log
+-rw-r--r-- 1 rowan rowan 20971548 Nov 12 22:59 server08.log
+-rw-r--r-- 1 rowan rowan 26214432 Nov 12 22:59 server09.log
+-rw-r--r-- 1 rowan rowan 31457280 Nov 12 22:59 server10.log
+-rw-r--r-- 1 rowan rowan 41943047 Nov 12 22:59 server11.log
+-rw-r--r-- 1 rowan rowan 52428832 Nov 12 23:00 server12.log

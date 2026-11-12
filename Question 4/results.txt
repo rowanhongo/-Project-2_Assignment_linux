@@ -1,0 +1,80 @@
+== log files
+total 214064
+-rw-r--r-- 1 rowan rowan  1048594 Nov 12 22:58 server01.log
+-rw-r--r-- 1 rowan rowan  2097196 Nov 12 22:58 server02.log
+-rw-r--r-- 1 rowan rowan  3145739 Nov 12 22:59 server03.log
+-rw-r--r-- 1 rowan rowan  5242909 Nov 12 22:59 server04.log
+-rw-r--r-- 1 rowan rowan  8388623 Nov 12 22:59 server05.log
+-rw-r--r-- 1 rowan rowan 10485802 Nov 12 22:59 server06.log
+-rw-r--r-- 1 rowan rowan 15728676 Nov 12 22:59 server07.log
+-rw-r--r-- 1 rowan rowan 20971548 Nov 12 22:59 server08.log
+-rw-r--r-- 1 rowan rowan 26214432 Nov 12 22:59 server09.log
+-rw-r--r-- 1 rowan rowan 31457280 Nov 12 22:59 server10.log
+-rw-r--r-- 1 rowan rowan 41943047 Nov 12 22:59 server11.log
+-rw-r--r-- 1 rowan rowan 52428832 Nov 12 23:00 server12.log
+
+== grep check
+logs/server01.log:4619
+logs/server02.log:9395
+logs/server03.log:14057
+logs/server04.log:23315
+logs/server05.log:37301
+logs/server06.log:46316
+logs/server07.log:69675
+logs/server08.log:93061
+logs/server09.log:116355
+logs/server10.log:139462
+logs/server11.log:186552
+logs/server12.log:232711
+grep total: 972819
+
+== timing runs (seconds), 3 runs each
+threads 1
+  run 1: 1.510996   Total matching lines across 12 files: 972819
+  run 2: 1.594599   Total matching lines across 12 files: 972819
+  run 3: 1.498562   Total matching lines across 12 files: 972819
+  average: 1.534720
+threads 2
+  run 1: 0.711698   Total matching lines across 12 files: 972819
+  run 2: 0.659635   Total matching lines across 12 files: 972819
+  run 3: 0.823756   Total matching lines across 12 files: 972819
+  average: 0.731697
+threads 4
+  run 1: 0.526184   Total matching lines across 12 files: 972819
+  run 2: 0.436378   Total matching lines across 12 files: 972819
+  run 3: 0.592195   Total matching lines across 12 files: 972819
+  average: 0.518253
+threads 8
+  run 1: 0.494369   Total matching lines across 12 files: 972819
+  run 2: 0.507447   Total matching lines across 12 files: 972819
+  run 3: 0.529776   Total matching lines across 12 files: 972819
+  average: 0.510533
+
+== speedup (T1 / Tn)
+threads 1: average 1.534720 s, speedup 1.00
+threads 2: average 0.731697 s, speedup 2.10
+threads 4: average 0.518253 s, speedup 2.96
+threads 8: average 0.510533 s, speedup 3.01
+
+== report.txt from the last 8 thread run
+logs/server02.log: 9395 matching lines out of 37264 (thread 2)
+logs/server01.log: 4619 matching lines out of 18638 (thread 1)
+logs/server04.log: 23315 matching lines out of 93182 (thread 3)
+logs/server03.log: 14057 matching lines out of 55909 (thread 7)
+logs/server06.log: 46316 matching lines out of 186370 (thread 6)
+logs/server07.log: 69675 matching lines out of 279539 (thread 8)
+logs/server05.log: 37301 matching lines out of 149087 (thread 4)
+logs/server09.log: 116355 matching lines out of 465889 (thread 2)
+logs/server08.log: 93061 matching lines out of 372731 (thread 5)
+logs/server10.log: 139462 matching lines out of 559089 (thread 1)
+logs/server11.log: 186552 matching lines out of 745429 (thread 3)
+logs/server12.log: 232711 matching lines out of 931814 (thread 7)
+Total matching lines across 12 files: 972819
+
+== missing file test
+logs/nothere.log: No such file or directory
+Total matching lines across 3 files: 14014
+Elapsed time: 0.011655 seconds
+logs/server01.log: 4619 matching lines out of 18638 (thread 1)
+logs/server02.log: 9395 matching lines out of 37264 (thread 4)
+Total matching lines across 3 files: 14014
